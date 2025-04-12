@@ -1,0 +1,63 @@
+\section{Vector Space}
+\label{sec:vector-space}
+
+\subsection{Definition}
+\label{subsec:definition}
+
+Let \( V \) be a non-empty set, and let \( \mathbb{K} \) be a field (like \(\mathbb{R}\)).
+
+We say that \( V \) is a \textbf{vector space over} \( \mathbb{K} \) if:
+
+\begin{itemize}
+    \item There is a binary operation \textbf{addition}: \( +: V \times V \to V \) such that \( u + v \in V \) for all \( u, v \in V \).
+    \item There is a \textbf{scalar multiplication}: \( \cdot: \mathbb{K} \times V \to V \) such that \( a \cdot u \in V \) for all \( a \in \mathbb{K} \) and \( u \in V \).
+    \item Eight axioms hold for all \( u, v, w \in V \) and \( a, b \in \mathbb{K} \):
+    \begin{enumerate}
+        \item \textbf{Associativity}:
+        \begin{equation}
+            u + (v + w) = (u + v) + w
+        \end{equation}
+        \item \textbf{Commutativity}:
+        \begin{equation}
+            u + v = v + u
+        \end{equation}
+        \item \textbf{Existence of zero vector}:
+        \begin{equation}
+            u + 0 = u
+        \end{equation}
+        \item \textbf{Existence of additive inverse}:
+        \begin{equation}
+            u + (-u) = 0
+        \end{equation}
+        \item \textbf{Distributivity over vector addition}:
+        \begin{equation}
+            a(u + v) = au + av
+        \end{equation}
+        \item \textbf{Distributivity over scalar addition}:
+        \begin{equation}
+            (a + b)u = au + bu
+        \end{equation}
+        \item \textbf{Associativity of scalar multiplication}:
+        \begin{equation}
+            a(bu) = (ab)u
+        \end{equation}
+        \item \textbf{Multiplicative identity}:
+        \begin{equation}
+            1u = u
+        \end{equation}
+    \end{enumerate}
+
+\end{itemize}
+
+\subsection{What \textit{is} a vector space, really?}
+\label{subsec:what-is-a-vector-space}
+
+Once we formalize the idea of vector spaces as sets of \textit{objects that we can add and scale}, the
+concept applies \textbf{not just to arrows in space}, but to many other things: functions, polynomials,
+matrices, sequences, etc.
+
+All those are \textbf{vector spaces} as long as they \textbf{satisfy the axioms above}.
+
+Then, the cool part about vector spaces is that the \textbf{abstraction} lets us transfer methods
+and results from one domain to another. In other words, if we can prove something about vector spaces in
+general, we can apply it to all the specific cases we care about.
